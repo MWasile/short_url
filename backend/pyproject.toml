@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "short-url"
+version = "0.0.1"
+description = "A URL shortener app for creating concise links"
+authors = ["MWasile <maaciej.wasilewski@gmail.com>"]
+license = "Beerware"
+readme = "README.md"
+packages = [{include = "short_url"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
