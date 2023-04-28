@@ -10,4 +10,5 @@ omit =
     *test.py,
     manage.py,
     install_poetry.py,
+    *admin.py,
      *url*
