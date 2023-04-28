@@ -9,3 +9,10 @@ def link_shortcut_db(db):
         original_link="https://www.google.com",
         shortcut="google",
     )
+
+
+@pytest.fixture
+def api_client():
+    from rest_framework.test import APIClient
+
+    return APIClient()

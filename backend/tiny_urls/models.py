@@ -2,7 +2,7 @@ from urllib.parse import urlparse
 from uuid import uuid4
 
 from django.db import models
-from django.db.models import URLField, CharField
+from django.db.models import URLField, CharField, SlugField
 from django.utils.text import slugify
 
 
@@ -16,7 +16,7 @@ class LinkShortcut(models.Model):
     """
 
     original_link: URLField = models.URLField()
-    shortcut: CharField = models.SlugField(unique=True)
+    shortcut: SlugField = models.SlugField(unique=True)
 
     def __str__(self):
         return f"{self.shortcut} -> {self.original_link[:10]}"

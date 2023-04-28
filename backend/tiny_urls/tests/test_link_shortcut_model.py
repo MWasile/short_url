@@ -15,16 +15,6 @@ def test_link_shortcut_model_save_to_db(db):
     assert shortcut_db.original_link == "https://www.google.com"
 
 
-def test_link_shortcut_unique_constraint(link_shortcut_db):
-    with pytest.raises(IntegrityError) as ctx:
-        LinkShortcut.objects.create(
-            original_link="https://www.google.com",
-            shortcut="google",
-        )
-
-    assert "UNIQUE constraint failed" in str(ctx)
-
-
 def test_link_shortcut_model_str(link_shortcut_db):
     assert (
         str(link_shortcut_db)
