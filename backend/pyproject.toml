@@ -10,6 +10,7 @@ packages = [{include = "short_url"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "4.2"
+djangorestframework = "3.14.0"
 
 
 [build-system]
