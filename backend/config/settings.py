@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # Third party apps
     "rest_framework",
     "drf_spectacular",
+    # Local apps
+    "tiny_urls.apps.TinyUrlsConfig",
 ]
 
 MIDDLEWARE = [
