@@ -2,4 +2,6 @@
 .vscode
 **/*.pyc
 db.sqlite3
-backend/envs/backend_env.env
+/envs/backend_env.env
+.coverage
+
