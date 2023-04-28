@@ -15,6 +15,7 @@
 - go to the project folder
 - fill `.env` file with your values (you can use `backend/envs/backend_env-default.env` as an example)
 - run `docker compose up --build`
+- run migrations `docker compose exec backend_api python manage.py migrate`
 
 # How to test
 - run `docker compose exec backend_api pytest`
