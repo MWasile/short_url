@@ -18,6 +18,8 @@ black = "23.3.0"
 mypy = "1.2.0"
 djangorestframework-stubs = "3.14.0"
 django-stubs = "4.2.0"
+pytest-django = "4.5.2"
+
 
 
 [build-system]
