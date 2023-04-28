@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# mypy: ignore-errors
 r"""
 This script will install Poetry and its dependencies in an isolated fashion.
 
